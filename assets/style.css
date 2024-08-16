@@ -1,0 +1,106 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.top-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg, #00000054, #00000054), url('./assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px 12px 0 0;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+.form-control:focus {
+    border-color: #9492ee;
+    outline: none;
+}
+
+.btn {
+    background-color: #9492ee;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #7a7dd1;
+}
+
+.f-pass {
+    color: #9492ee;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.f-pass:hover {
+    text-decoration: underline;
+}

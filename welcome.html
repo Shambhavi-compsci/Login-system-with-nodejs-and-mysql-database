@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="assets/welcome.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="profile.html">User Profile</a></li>
+        </ul>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search__container">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" />
+        </div>
+        <input class="search__input" type="text" id="search-box" placeholder="Search" />
+    </div>
+
+    <!-- Credits Section -->
+    <div class="credits__container">
+        <p class="credits__text">Please paste URL in the search box <a href="/" class="credits__link">Login Page</a></p>
+    </div>
+
+    <script>
+        document.getElementById('search-box').addEventListener('change', function() {
+            const url = this.value;
+            if (url) {
+                window.location.href = "/payment.html";
+            }
+        });
+    </script>
+</body>
+</html>
